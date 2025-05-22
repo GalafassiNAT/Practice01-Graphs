@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Practice01_Graphs.models;
+
+class Program
+{
+    static void Main(String[] args)
+    {
+        File entrada = new File(args[0]);
+        Graph G = new Graph(entrada);
+        Console.WriteLine(G);
+    }
+}
